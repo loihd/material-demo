@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Common views -->
+  <item name="view_pager" type="id"/>
+  <item name="recycler_view" type="id"/>
+  <item name="swipe_layout" type="id"/>
+  <item name="progress" type="id"/>
+  <item name="toolbar" type="id"/>
+  <item name="appbar" type="id"/>
+  <item name="coordinator_layout" type="id"/>
+
+  <!-- Main Screen -->
+  <item name="drawer_layout" type="id"/>
+  <item name="navigation_view" type="id"/>
+  <item name="tab_layout" type="id"/>
+
+  <!--- Menu -->
+  <item name="home_menu" type="id"/>
+  <item name="friend_menu" type="id"/>
+</resources>
