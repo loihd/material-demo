@@ -9,6 +9,13 @@
   <item name="appbar" type="id"/>
   <item name="coordinator_layout" type="id"/>
 
+  <!-- Login Screen -->
+  <item name="input_layout_username" type="id"/>
+  <item name="input_layout_password" type="id"/>
+  <item name="edt_username" type="id"/>
+  <item name="edt_password" type="id"/>
+  <item name="btn_login" type="id"/>
+
   <!-- Main Screen -->
   <item name="drawer_layout" type="id"/>
   <item name="navigation_view" type="id"/>

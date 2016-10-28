@@ -1,5 +1,7 @@
 package io.github.loihd.materialdemo.main;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
@@ -29,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
   @BindView(R.id.coordinator_layout) CoordinatorLayout coordinatorLayout;
   @BindView(R.id.navigation_view) NavigationView navigationView;
   @BindView(R.id.drawer_layout) DrawerLayout drawerLayout;
+
+  public static Intent getIntent(Activity activity) {
+    return new Intent(activity, MainActivity.class);
+  }
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

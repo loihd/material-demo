@@ -4,10 +4,22 @@
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
+
+    <item name="colorControlNormal">#d32f2f</item>
+    <item name="colorControlActivated">#ff5722</item>
+    <item name="colorControlHighlight">#f44336</item>
   </style>
 
   <style name="AppTheme" parent="AppThemBase">
 
+  </style>
+
+  <style name="counterText">
+    <item name="android:textColor">#aa5353cc</item>
+  </style>
+
+  <style name="counterOverride">
+    <item name="android:textColor">#ff0000</item>
   </style>
 
 </resources>

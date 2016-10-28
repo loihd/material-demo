@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="io.github.loihd.materialdemo.login.LoginActivity"
+    >
+
+  <android.support.v7.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      android:text="Login"
+      android:textAllCaps="true"
+      android:textColor="@color/colorPrimary"
+      android:textSize="30sp"
+      />
+
+  <android.support.design.widget.TextInputLayout
+      android:id="@id/input_layout_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:counterEnabled="true"
+      app:counterMaxLength="25"
+      app:counterOverflowTextAppearance="@style/counterOverride"
+      app:counterTextAppearance="@style/counterText"
+      >
+    <EditText
+        android:id="@id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="25"
+        android:hint="@string/login.user_name"
+        android:maxLength="@integer/username_max_length"
+        />
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.design.widget.TextInputLayout
+      android:id="@id/input_layout_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:counterEnabled="true"
+      app:counterMaxLength="25"
+      app:counterOverflowTextAppearance="@style/counterOverride"
+      app:counterTextAppearance="@style/counterText"
+      app:passwordToggleEnabled="true"
+      >
+    <EditText
+        android:id="@id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login.password"
+        android:inputType="textPassword"
+        android:maxLength="@integer/password_max_length"
+        />
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.v7.widget.AppCompatButton
+      android:id="@id/btn_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="@string/login.btn_login"
+      />
+</LinearLayout>
