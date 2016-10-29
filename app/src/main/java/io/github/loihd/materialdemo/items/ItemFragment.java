@@ -4,7 +4,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SnapHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +35,11 @@ public class ItemFragment extends Fragment {
       RecyclerView recyclerView = (RecyclerView) view;
       recyclerView.setLayoutManager(new LinearLayoutManager(context));
       recyclerView.setAdapter(new ItemAdapter(DummyContent.ITEMS));
+
+      SnapHelper snapHelper = new LinearSnapHelper();
+      snapHelper.attachToRecyclerView(recyclerView);
     }
+
     return view;
   }
 }
